@@ -30,3 +30,19 @@ How to attempt this challenge:
 
 You must follow these steps for your solution to be accepted -- forks or other methods will not be considered.
 
+
+
+SOLVED:
+```
+git clone <URL>
+git checkout feature/base64
+git rebase --onto feature/useragent master
+ --- fix conflict --
+git add .
+git rebase --continue
+ --- fix conflict finish ---
+git checkout master
+git rebase feature/base64
+git log
+ --- TADA! ---
+```
